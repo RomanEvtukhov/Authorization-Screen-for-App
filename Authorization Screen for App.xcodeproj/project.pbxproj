@@ -10,7 +10,6 @@
 		571106DB28B2CFF3006F522C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571106DA28B2CFF3006F522C /* AppDelegate.swift */; };
 		571106DD28B2CFF3006F522C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571106DC28B2CFF3006F522C /* SceneDelegate.swift */; };
 		571106DF28B2CFF3006F522C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571106DE28B2CFF3006F522C /* ViewController.swift */; };
-		571106E228B2CFF3006F522C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571106E028B2CFF3006F522C /* Main.storyboard */; };
 		571106E428B2CFF4006F522C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571106E328B2CFF4006F522C /* Assets.xcassets */; };
 		571106E728B2CFF4006F522C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571106E528B2CFF4006F522C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		571106DA28B2CFF3006F522C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		571106DC28B2CFF3006F522C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		571106DE28B2CFF3006F522C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		571106E128B2CFF3006F522C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		571106E328B2CFF4006F522C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571106E628B2CFF4006F522C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		571106E828B2CFF4006F522C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,38 @@
 		571106D928B2CFF3006F522C /* Authorization Screen for App */ = {
 			isa = PBXGroup;
 			children = (
-				571106DA28B2CFF3006F522C /* AppDelegate.swift */,
-				571106DC28B2CFF3006F522C /* SceneDelegate.swift */,
-				571106DE28B2CFF3006F522C /* ViewController.swift */,
-				571106E028B2CFF3006F522C /* Main.storyboard */,
-				571106E328B2CFF4006F522C /* Assets.xcassets */,
-				571106E528B2CFF4006F522C /* LaunchScreen.storyboard */,
-				571106E828B2CFF4006F522C /* Info.plist */,
+				571106EE28B2D31C006F522C /* Application */,
+				571106F028B2D347006F522C /* Controllers */,
+				571106EF28B2D329006F522C /* Resources */,
 			);
 			path = "Authorization Screen for App";
+			sourceTree = "<group>";
+		};
+		571106EE28B2D31C006F522C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				571106DC28B2CFF3006F522C /* SceneDelegate.swift */,
+				571106DA28B2CFF3006F522C /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		571106EF28B2D329006F522C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				571106E828B2CFF4006F522C /* Info.plist */,
+				571106E528B2CFF4006F522C /* LaunchScreen.storyboard */,
+				571106E328B2CFF4006F522C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		571106F028B2D347006F522C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				571106DE28B2CFF3006F522C /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +148,6 @@
 			files = (
 				571106E728B2CFF4006F522C /* LaunchScreen.storyboard in Resources */,
 				571106E428B2CFF4006F522C /* Assets.xcassets in Resources */,
-				571106E228B2CFF3006F522C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		571106E028B2CFF3006F522C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				571106E128B2CFF3006F522C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		571106E528B2CFF4006F522C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +301,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GW8T94CN42;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Authorization Screen for App/Info.plist";
+				INFOPLIST_FILE = "Authorization Screen for App/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +328,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GW8T94CN42;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Authorization Screen for App/Info.plist";
+				INFOPLIST_FILE = "Authorization Screen for App/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
